@@ -1,0 +1,80 @@
+<div class="section landing-section">
+    <div class="container">
+        <!--<div class="row">-->
+        <div class="col-md-8 col-md-offset-2">
+
+            <h2 class="text-center">New Fabric Swatch</h2>
+
+            <form method="POST" enctype="multipart/form-data" class="contact-form">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input ng-model="swatchForm.name" type="text" class="form-control" name="name" id="name" placeholder="Name"><br/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input ng-model="swatchForm.collectionz" type="text" class="form-control" name="collection" id="collection" placeholder="Collection"><br/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input ng-model="swatchForm.designer" type="text" class="form-control" name="designer" id="designer" placeholder="Designer"><br/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <input ng-model="swatchForm.manufacturer" type="text" class="form-control" name="manufacturer" id="manufacturer"
+                               placeholder="Manufacturer"><br/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>Amount:</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input ng-model="swatchForm.amountYards" type="number" class="form-control" name="amountyd" id="amountyd" placeholder="Yards">
+                    </div>
+                    <div class="col-md-5">
+                        <input ng-model="swatchForm.amountInches" type="number" class="form-control" name="amountin" id="amountin" placeholder="Inches">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Width:</label>
+                        <input ng-model="swatchForm.width" list="width" name="width">
+                        <datalist id="width">
+                            <option value="44 inches"></option>
+                            <option value="108 inches"></option>
+                        </datalist>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Colors:</label>
+                                <input ng-model="swatchForm.colors" type="color" class="form-control" name="colors" id="colors"><br/>
+
+
+                                <div class="row">
+                                    <div class="col-md-3">
+
+                                        <!--<input ng-model="swatchForm.image" type="file" name="image"/>-->
+                                        <input type="file" ng-model="file" ngf-select="" ng-model="picFile" name="file" accept="image/*" required="" class="ng-pristine ng-invalid ng-invalid-required">
+
+                                    </div>
+                                </div>
+
+
+                                <input ng-click="addSwatch()" type="submit" class="btn btn-danger btn-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

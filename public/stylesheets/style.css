@@ -1,0 +1,22 @@
+.appName {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Rock Salt', cursive;
+  color: black;
+}
+
+.appName a {
+  text-decoration: none;
+}
+
+/*.appName a:visited {*/
+  /*text-decoration: none;*/
+/*}*/
+
+/*.appName a:hover {*/
+  /*text-decoration: none;*/
+/*}*/
+
+/*.appName a:active {*/
+  /*text-decoration: none;*/
+/*}*/
