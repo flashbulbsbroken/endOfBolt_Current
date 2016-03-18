@@ -15,39 +15,60 @@
                     <div class="col-md-10 col-md-offset-1">
 
                         <div ng-repeat="item in swatchList track by $index">
-                            <div class="col-xs-6 col-md-2">
-                                <a href="#" class="thumbnail" data-toggle="modal" data-target="#{{item.img.id}}">
-                                    <!--{{item.img.path}}-->
-                                    <img ng-src="{{item.img.path}}" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="modal fade" id="{{item.img.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">{{item.name}}</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img ng-src="{{item.img.path}}" />
-
-                                        <p>Name: {{item.name}}</p>
-                                        <p>Collection: {{item.collectionz}}</p>
-                                        <p>Designer: {{item.designer}}</p>
-                                        <p>Manufacturer: {{item.manufacturer}}</p>
-                                        <p>Amount: {{item.amountYards}} yards | {{item.amountInches}} inches</p>
-                                        <p>Width: {{item.width}}</p>
-
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" ng-src="{{item.img.path}}" alt="">
+                                    <div class="overlay">
+                                        <p>
+                                            <a href="#">LINK HERE</a>
+                                            <p>Name: {{this.item.name}}</p>
+                                            <p>Collection: {{this.item.collectionz}}</p>
+                                            <p>Designer: {{this.item.designer}}</p>
+                                            <p>Manufacturer: {{this.item.manufacturer}}</p>
+                                            <p>Amount: {{this.item.amountYards}} yards | {{this.item.amountInches}} inches</p>
+                                            <p>Width: {{this.item.width}}</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--BROKEN-->
+                        <!--<div ng-repeat="item in swatchList track by $index">-->
+                            <!--<div class="col-xs-6 col-md-2">-->
+                                <!--<a href="#" class="thumbnail" data-toggle="modal" data-target="#{{item.img.id}}">-->
+                                    <!--&lt;!&ndash;{{item.img.path}}&ndash;&gt;-->
+                                    <!--<img ng-src="{{item.img.path}}" />-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="modal fade" id="{{item.img.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+                            <!--<div class="modal-dialog" role="document">-->
+                                <!--<div class="modal-content">-->
+                                    <!--<div class="modal-header">-->
+                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                                        <!--<h4 class="modal-title" id="myModalLabel">{{item.name}}</h4>-->
+                                    <!--</div>-->
+                                    <!--<div class="modal-body">-->
+                                        <!--<img ng-src="{{item.img.path}}" />-->
+
+                                        <!--<p>Name: {{item.name}}</p>-->
+                                        <!--<p>Collection: {{item.collectionz}}</p>-->
+                                        <!--<p>Designer: {{item.designer}}</p>-->
+                                        <!--<p>Manufacturer: {{item.manufacturer}}</p>-->
+                                        <!--<p>Amount: {{item.amountYards}} yards | {{item.amountInches}} inches</p>-->
+                                        <!--<p>Width: {{item.width}}</p>-->
+
+                                    <!--</div>-->
+
+                                    <!--<div class="modal-footer">-->
+                                        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
                     </div>
                 </div>
             </div>
