@@ -1,25 +1,54 @@
-.appName {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: 'Rock Salt', cursive;
-  color: black;
+/**********************************************/
+/*** START STICKY FOOTER STYLES    ***/
+/**********************************************/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 70px;
+  /* Margin bottom by footer height */
+  margin-bottom: 65px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
 }
 
-.appName a {
-  text-decoration: none;
+.heart {
+  color: hotpink;
 }
 
-/*.appName a:visited {*/
-  /*text-decoration: none;*/
-/*}*/
+.container {
+  width: auto;
+  max-width: 960px;
+  padding: 0 15px;
+}
+.container .textMuted {
+  margin: 20px 0;
+}
 
-/*.appName a:hover {*/
-  /*text-decoration: none;*/
-/*}*/
+/**********************************************/
+/*** END STICKY FOOTER STYLES    ***/
+/**********************************************/
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
 
-/*.appName a:active {*/
-  /*text-decoration: none;*/
-/*}*/
+.col {
+  padding: 10px;
+}
+
+/**********************************************/
+/*** START HOVER EFFECT FOR FABRIC SWATCHES ***/
+/**********************************************/
 
 .hovereffect {
   width: 100%;
@@ -29,8 +58,8 @@
   position: relative;
   text-align: center;
   cursor: default;
-  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+  background: #404040;
+  margin-bottom: 10px;
 }
 
 .hovereffect .overlay {
@@ -48,6 +77,7 @@
   display: block;
   position: relative;
   max-width: none;
+  max-height: 420px;
   width: calc(100% + 60px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
   transition: opacity 0.35s, transform 0.45s;
@@ -105,3 +135,7 @@
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+/**********************************************/
+/***  END HOVER EFFECT FOR FABRIC SWATCHES  ***/
+/**********************************************/

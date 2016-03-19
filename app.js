@@ -101,7 +101,7 @@ passport.deserializeUser(function(id, callback){
 });
 
 app.use('/', index);
-app.use('/home', home);
+app.use('/home', express.static(__dirname + '/../home'), home);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
@@ -112,6 +112,10 @@ app.get('/*', function(request, response, next) {
   response.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
+//Alternative catch all
+//app.all('/*', function(request, response, next) {
+//  response.sendFile('index.html', {root: __dirname});
+//});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
